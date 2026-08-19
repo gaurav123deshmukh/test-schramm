@@ -2,64 +2,126 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact | Schramm Ad Labs</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
+    <title>Contact Us | Schramm AdLabs</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="FAV ICON.webp" type="image/webp">
+    
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="preloader"><div class="loader-ring"></div></div>
-    <div class="loaded-content">
-        <header>
-            <div class="container nav-wrapper">
-                <a href="index.html" class="logo"><img src="image_33197f.png" alt="Schramm Ad Labs"></a>
-                <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
-                <ul class="nav-links">
-                    <li><a href="index.html" data-text="Home">Home</a></li>
-                    <li><a href="services.html" data-text="Services">Services</a></li>
-                    <li><a href="portfolio.html" data-text="Portfolio">Portfolio</a></li>
-                    <li><a href="about.html" data-text="About">About</a></li>
-                    <li><a href="contact.html" class="btn-primary">Get a Quote</a></li>
-                </ul>
-            </div>
-        </header>
-
-        <section class="page-header">
-            <div class="container">
-                <h1 class="reveal">Contact Us</h1>
-                <p class="reveal">Establish a secure connection with our grid.</p>
-            </div>
-        </section>
-
-        <section class="content-section">
-            <div class="container grid" style="grid-template-columns: 1fr 1.5fr;">
-                <div class="service-card reveal">
-                    <h3>Headquarters</h3>
-                    <p style="margin-top: 15px; color: var(--text-light);"><i class="fa-solid fa-location-dot" style="font-size: 1.2rem; margin-right: 10px;"></i> Office No. 210, 2nd Floor, A-Wing, Shiv Chamber, Plot No. 21, Sector 11 C.B.D Belapur, Navi Mumbai, Pin 400614</p>
-                    <p style="margin-top: 15px; color: var(--text-light);"><i class="fa-solid fa-envelope" style="font-size: 1.2rem; margin-right: 10px;"></i> schrammadlabs@kbjindia.com</p>
-                    <p style="margin-top: 15px; color: var(--text-light);"><i class="fa-solid fa-phone" style="font-size: 1.2rem; margin-right: 10px;"></i> +91 8655695279</p>
-                </div>
-                <div class="contact-card reveal">
-                    <form class="contact-form" action="thank-you.html">
-                        <input type="text" placeholder="Your Name *" required>
-                        <input type="email" placeholder="Your Email *" required>
-                        <input type="text" placeholder="Subject" required>
-                        <textarea placeholder="Your Requirements... *" required></textarea>
-                        <button type="submit" class="btn-primary" style="align-self: flex-start; margin-top: 10px;">Initiate Transfer <i class="fa-solid fa-paper-plane"></i></button>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-        <footer>
-            <div class="container">
-                <div class="footer-bottom" style="border-top: none;">
-                    <p>&copy; 2026 Schramm Ad Labs. All Rights Reserved.</p>
-                </div>
-            </div>
-        </footer>
+    <!-- Clean Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
     </div>
+
+    <!-- Sophisticated Dark Blue Transparent Header -->
+    <header>
+        <div class="container nav-wrapper">
+            <a href="index.html" class="logo">
+                <img src="image_33197f.png" alt="Schramm AdLabs Logo">
+            </a>
+            <div class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Work</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li>
+                    <a href="contact.html" class="btn-primary">
+                        Get a Free Audit
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container reveal">
+            <h1>Let's Talk Business</h1>
+            <p>Reach out to discuss your customized marketing plan.</p>
+        </div>
+    </section>
+
+    <!-- Contact Grid -->
+    <section class="content-section">
+        <div class="container grid" style="grid-template-columns: 1fr 1.5fr; align-items: start;">
+            
+            <!-- Contact Information Card -->
+            <div class="card reveal">
+                <h3>Our Headquarters</h3>
+                <p style="margin-top: 15px; color: var(--text-light); line-height: 1.8;">
+                    <i class="fa-solid fa-location-dot" style="font-size: 1.2rem; color: var(--primary-blue); margin-right: 10px;"></i> 
+                    Office No. 210, 2nd Floor, A-Wing, Shiv Chamber, Plot No. 21, Sector 11 C.B.D Belapur, Navi Mumbai, Pin - 400614
+                </p>
+                <p style="margin-top: 20px; color: var(--text-light);">
+                    <i class="fa-solid fa-envelope" style="font-size: 1.2rem; color: var(--primary-blue); margin-right: 10px;"></i> 
+                    schrammadlabs@kbjindia.com
+                </p>
+                <p style="margin-top: 20px; color: var(--text-light);">
+                    <i class="fa-solid fa-phone" style="font-size: 1.2rem; color: var(--primary-blue); margin-right: 10px;"></i> 
+                    +91 8655695279
+                </p>
+                <div style="margin-top: 30px; border-top: 1px solid rgba(0,0,0,0.05); padding-top: 20px;">
+                    <p style="font-size: 0.9rem; font-weight: 600; color: var(--dark-navy);">GST NO: 27AALCK1932F1ZK</p>
+                </div>
+            </div>
+
+            <!-- Lead Capture Form -->
+            <div class="card reveal" style="transition-delay: 0.2s;">
+                <h3 style="margin-bottom: 25px;">Send an Inquiry</h3>
+                <form class="contact-form" action="thank-you.html">
+                    <input type="text" placeholder="Your Full Name *" required>
+                    <input type="email" placeholder="Your Official Email *" required>
+                    <input type="tel" placeholder="Your Phone Number *" required>
+                    <textarea placeholder="Tell us about your business requirements... *" required></textarea>
+                    
+                    <button type="submit" class="btn-primary" style="margin-top: 10px; width: fit-content;">
+                        Request a Call <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <a href="index.html"><img src="image_33197f.png" alt="Schramm AdLabs Logo"></a>
+                    <p>Relevant. Reliable. Realistic.<br>A Division of KBJ HR INDIA PRIVATE LIMITED.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Our Work</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-phone" style="margin-right: 8px;"></i> +91 8655695279</li>
+                        <li><i class="fa-solid fa-envelope" style="margin-right: 8px;"></i> schrammadlabs@kbjindia.com</li>
+                        <li><i class="fa-solid fa-location-dot" style="margin-right: 8px;"></i> CBD Belapur, Navi Mumbai</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Schramm AdLabs. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
     <script src="app.js"></script>
 </body>
 </html>
