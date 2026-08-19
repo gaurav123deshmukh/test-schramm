@@ -2,72 +2,104 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About us | Schramm Ad Labs</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
+    <title>About Us | Schramm AdLabs</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="FAV ICON.webp" type="image/webp">
+    
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="preloader"><div class="loader-ring"></div></div>
-    <div class="loaded-content">
-        <header>
-            <div class="container nav-wrapper">
-                <a href="index.html" class="logo"><img src="image_33197f.png" alt="Schramm Ad Labs"></a>
-                <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
-                <ul class="nav-links">
-                    <li><a href="index.html" data-text="Home">Home</a></li>
-                    <li><a href="services.html" data-text="Services">Services</a></li>
-                    <li><a href="portfolio.html" data-text="Portfolio">Portfolio</a></li>
-                    <li><a href="about.html" data-text="About">About</a></li>
-                    <li><a href="contact.html" class="btn-primary">Get a Quote</a></li>
-                </ul>
-            </div>
-        </header>
+    <!-- Clean Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
 
-        <section class="page-header">
-            <div class="container">
-                <h1>Who We Are</h1>
-                <p>We Consult, Co-create, Communicate and strengthen your Command.</p>
+    <!-- Sophisticated Dark Blue Transparent Header -->
+    <header>
+        <div class="container nav-wrapper">
+            <a href="index.html" class="logo">
+                <img src="image_33197f.png" alt="Schramm AdLabs Logo">
+            </a>
+            <div class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
             </div>
-        </section>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Work</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li>
+                    <a href="contact.html" class="btn-primary">
+                        Get a Free Audit
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
 
-        <section class="content-section">
-            <div class="container">
-                <div class="service-card" style="text-align: center; max-width: 800px; margin: 0 auto;">
-                    <i class="fa-solid fa-network-wired" style="font-size: 4rem;"></i>
-                    <h2 style="font-family: 'Rajdhani', sans-serif; font-size: 2.5rem; margin-top: 15px;">Our Ecosystem</h2>
-                    <p style="margin-top: 20px; font-size: 1.1rem; color: var(--text-light);">
-                        Schramm AdLabs supports your journey from product development to branding, actively expanding your reach in domestic and international markets. 
-                        <br><br>
-                        We are proud to be a division of <strong>KBJ HR INDIA PRIVATE LIMITED</strong>. Alongside our sister divisions like <strong>Schramm Logistics</strong> (handling end-to-end warehousing and transportation) and <strong>Schramm Help Desk</strong> (Global Sourcing), we provide an unparalleled business development ecosystem.
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container reveal">
+            <h1>Who We Are</h1>
+            <p>We Consult, Co-create, Communicate, and strengthen your Command.</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="content-section">
+        <div class="container">
+            <div class="card reveal" style="text-align: center; max-width: 900px; margin: 0 auto; padding: 80px 40px;">
+                <i class="fa-solid fa-network-wired" style="font-size: 3.5rem; margin-bottom: 20px;"></i>
+                <h2 style="font-family: 'Montserrat', sans-serif; font-size: 2.5rem; color: var(--dark-navy); margin-bottom: 20px;">Our Ecosystem</h2>
+                <p style="font-size: 1.15rem; color: var(--text-light); max-width: 700px; margin: 0 auto 30px;">
+                    Schramm AdLabs supports your journey from product development to branding, actively expanding your reach in both domestic and international markets. 
+                    We believe in no jargons and no big presentations—we keep it simple. We are your marketing partner, truly speaking your language.
+                </p>
+                <div style="border-top: 1px solid rgba(0,0,0,0.05); padding-top: 30px; margin-top: 20px;">
+                    <p style="font-size: 1.05rem; color: var(--text-dark); font-weight: 500;">
+                        We are proud to be a division of <strong>KBJ HR INDIA PRIVATE LIMITED</strong>. 
+                        Alongside our sister divisions like <strong>Schramm Logistics</strong> (handling end-to-end warehousing and transportation) and <strong>Schramm Help Desk</strong> (Global Sourcing), we provide an unparalleled business development ecosystem.
                     </p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <footer>
-            <div class="container">
-                <div class="footer-grid">
-                    <div class="footer-logo">
-                        <a href="index.html"><img src="image_33197f.png" alt="Schramm Ad Labs"></a>
-                        <p style="color: var(--text-light); margin-top: 10px;">Relevant, Reliable, Realistic. Part of KBJ HR INDIA PRIVATE LIMITED.</p>
-                    </div>
-                    <div class="footer-links">
-                        <h4>Contact</h4>
-                        <ul>
-                            <li style="color: var(--text-light);">+91 8655695279</li>
-                            <li style="color: var(--text-light);">schrammadlabs@kbjindia.com</li>
-                            <li><a href="contact.html">Send Inquiry</a></li>
-                        </ul>
-                    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <a href="index.html"><img src="image_33197f.png" alt="Schramm AdLabs Logo"></a>
+                    <p>Relevant. Reliable. Realistic.<br>A Division of KBJ HR INDIA PRIVATE LIMITED.</p>
                 </div>
-                <div class="footer-bottom">
-                    <p>&copy; 2026 Schramm Ad Labs. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Our Work</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-phone" style="margin-right: 8px;"></i> +91 8655695279</li>
+                        <li><i class="fa-solid fa-envelope" style="margin-right: 8px;"></i> schrammadlabs@kbjindia.com</li>
+                        <li><i class="fa-solid fa-location-dot" style="margin-right: 8px;"></i> CBD Belapur, Navi Mumbai</li>
+                    </ul>
                 </div>
             </div>
-        </footer>
-    </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Schramm AdLabs. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
     <script src="app.js"></script>
 </body>
 </html>
