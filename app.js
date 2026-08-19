@@ -4,10 +4,10 @@ window.addEventListener('load', function() {
         preloader.style.opacity = '0';
         setTimeout(function() {
             preloader.style.display = 'none';
-            typeWriter();
         }, 500); 
-    }, 800);
+    }, 500); // Faster preloader for better UX
 
+    // Active Link Highlighting
     const currentLocation = location.href;
     const menuItem = document.querySelectorAll('.nav-links a:not(.btn-primary)');
     for (let i = 0; i < menuItem.length; i++) {
@@ -16,12 +16,13 @@ window.addEventListener('load', function() {
         }
     }
 
+    // Scroll Reveal Observer
     function reveal() {
-        var reveals = document.querySelectorAll(".reveal");
-        for (var i = 0; i < reveals.length; i++) {
-            var windowHeight = window.innerHeight;
-            var elementTop = reveals[i].getBoundingClientRect().top;
-            var elementVisible = 80; 
+        const reveals = document.querySelectorAll(".reveal");
+        for (let i = 0; i < reveals.length; i++) {
+            const windowHeight = window.innerHeight;
+            const elementTop = reveals[i].getBoundingClientRect().top;
+            const elementVisible = 80;
 
             if (elementTop < windowHeight - elementVisible) {
                 reveals[i].classList.add("active");
@@ -31,6 +32,7 @@ window.addEventListener('load', function() {
     window.addEventListener("scroll", reveal);
     reveal(); 
 
+    // Mobile Menu Toggle
     const menuToggle = document.querySelector('.menu-toggle');
     const navLinks = document.querySelector('.nav-links');
     
@@ -48,17 +50,3 @@ window.addEventListener('load', function() {
         });
     }
 });
-
-// Extracted from Schramm AdLabs Brochure
-const text = "NO JARGONS, NO BIG PRESENTATIONS. WE KEEP IT SIMPLE. YOUR MARKETING PARTNER TRULY SPEAKING YOUR LANGUAGE.";
-let charIndex = 0;
-const speed = 40; 
-const typeTarget = document.getElementById("typewriter-text");
-
-function typeWriter() {
-    if (typeTarget && charIndex < text.length) {
-        typeTarget.innerHTML += text.charAt(charIndex);
-        charIndex++;
-        setTimeout(typeWriter, speed);
-    }
-}
