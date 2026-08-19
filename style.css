@@ -160,6 +160,33 @@ header {
 }
 .lead-form input:focus { outline: 2px solid var(--primary-blue); }
 
+/* Contact Form Styling Fix */
+.contact-form { display: flex; flex-direction: column; gap: 20px; width: 100%; }
+
+.contact-form input, .contact-form textarea { 
+    width: 100%; 
+    box-sizing: border-box; 
+    background: var(--white); 
+    border: 1px solid rgba(0,0,0,0.1); 
+    padding: 15px 20px; 
+    color: var(--text-dark); 
+    font-family: 'Inter', sans-serif; 
+    font-size: 1rem; 
+    outline: none; 
+    transition: var(--transition); 
+    border-radius: 6px; 
+}
+
+.contact-form input:focus, .contact-form textarea:focus { 
+    border-color: var(--primary-blue); 
+    box-shadow: 0 0 15px rgba(9, 115, 186, 0.1); 
+}
+
+.contact-form textarea { 
+    resize: vertical; 
+    min-height: 160px; 
+}
+
 /* Process Steps */
 .step-number {
     font-size: 3rem; font-weight: 800; color: rgba(9, 115, 186, 0.1); 
