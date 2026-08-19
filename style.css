@@ -49,24 +49,36 @@ a { text-decoration: none; color: inherit; }
 @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
 
 /* =========================================
-   Sophisticated Header
+   Dark Blue Transparent Header
    ========================================= */
 header {
-    background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(15px);
+    background: rgba(10, 25, 47, 0.85); /* Dark Blue Transparent */
+    backdrop-filter: blur(15px);
     position: fixed; width: 100%; top: 0; z-index: 1000;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.03); transition: var(--transition); padding: 15px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); 
+    transition: var(--transition); padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 .nav-wrapper { display: flex; justify-content: space-between; align-items: center; }
-.logo img { max-height: 50px; width: auto; transition: var(--transition); }
+
+/* Make the logo white so it stands out against the dark blue header */
+.logo img { 
+    max-height: 50px; 
+    width: auto; 
+    transition: var(--transition); 
+    filter: brightness(0) invert(1); 
+}
 .logo img:hover { opacity: 0.8; }
 
 .nav-links { display: flex; gap: 35px; list-style: none; align-items: center; }
+
+/* Navigation links changed to white */
 .nav-links a {
-    font-weight: 600; font-size: 0.9rem; color: var(--text-dark); 
+    font-weight: 600; font-size: 0.9rem; color: rgba(255, 255, 255, 0.9); 
     transition: var(--transition); text-transform: uppercase; letter-spacing: 0.5px;
 }
-.nav-links a:hover, .nav-links a.active { color: var(--primary-blue); }
-.menu-toggle { display: none; font-size: 1.8rem; color: var(--primary-blue); cursor: pointer; z-index: 1001; }
+.nav-links a:hover, .nav-links a.active { color: var(--accent-teal); }
+.menu-toggle { display: none; font-size: 1.8rem; color: var(--white); cursor: pointer; z-index: 1001; }
 
 /* Lead-Gen Optimized Buttons */
 .btn-primary {
@@ -77,7 +89,7 @@ header {
 }
 .btn-primary:hover {
     transform: translateY(-2px); box-shadow: 0 8px 25px rgba(9, 115, 186, 0.3);
-    background: var(--dark-navy); border-color: var(--dark-navy); color: var(--white) !important;
+    background: var(--accent-teal); border-color: var(--accent-teal); color: var(--white) !important;
 }
 .btn-outline {
     background: transparent; color: var(--text-dark); border: 1px solid var(--text-light);
@@ -87,16 +99,11 @@ header {
 .btn-outline:hover { border-color: var(--primary-blue); color: var(--primary-blue); }
 
 /* =========================================
-   Clean Hero Section (Bluish Transparent)
+   Clean Hero Section
    ========================================= */
 .hero {
-    padding: 220px 0 140px; 
-    text-align: center; 
-    position: relative;
-    /* Sophisticated Bluish Transparent Gradient */
-    background: linear-gradient(135deg, rgba(9, 115, 186, 0.12) 0%, rgba(28, 181, 224, 0.03) 100%);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(9, 115, 186, 0.1);
+    padding: 220px 0 140px; text-align: center; position: relative;
+    background: linear-gradient(to bottom, #FFFFFF 0%, var(--bg-main) 100%);
 }
 .hero h1 { font-size: 4rem; font-weight: 800; line-height: 1.15; margin-bottom: 25px; color: var(--dark-navy); }
 .hero h1 span { color: var(--primary-blue); }
@@ -110,9 +117,8 @@ header {
     padding: 180px 0 80px; 
     text-align: center; 
     position: relative;
-    background: linear-gradient(135deg, rgba(9, 115, 186, 0.12) 0%, rgba(28, 181, 224, 0.03) 100%);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(9, 115, 186, 0.1);
+    background: linear-gradient(to bottom, #FFFFFF 0%, var(--bg-main) 100%);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 .page-header h1 { font-size: 3.5rem; font-weight: 800; color: var(--dark-navy); margin-bottom: 15px; }
 .page-header p { font-size: 1.2rem; color: var(--text-light); max-width: 600px; margin: 0 auto; min-height: 30px;}
@@ -133,7 +139,8 @@ header {
     border: 1px solid rgba(0,0,0,0.03); text-align: left;
 }
 .card:hover { transform: translateY(-5px); box-shadow: var(--shadow-hover); border-color: rgba(9, 115, 186, 0.2); }
-.card i { font-size: 2.2rem; color: var(--primary-blue); margin-bottom: 25px; }
+.card i { font-size: 2.2rem; color: var(--primary-blue); margin-bottom: 25px; transition: var(--transition); }
+.card:hover i { color: var(--accent-teal); transform: scale(1.1); }
 .card h3 { font-size: 1.3rem; margin-bottom: 15px; color: var(--dark-navy); font-weight: 700; }
 .card p { color: var(--text-light); font-size: 0.95rem; }
 
@@ -187,8 +194,8 @@ footer { background: var(--white); padding: 80px 0 30px; border-top: 1px solid r
 @media (max-width: 768px) {
     .menu-toggle { display: block; }
     .nav-links {
-        position: absolute; top: 100%; left: 0; width: 100%; background: var(--white);
-        flex-direction: column; padding: 30px 0; box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+        position: absolute; top: 100%; left: 0; width: 100%; background: var(--dark-navy);
+        flex-direction: column; padding: 30px 0; box-shadow: 0 15px 30px rgba(0,0,0,0.1);
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); transition: var(--transition);
     }
     .nav-links.active { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
