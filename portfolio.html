@@ -13,6 +13,33 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
     
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* On mobile, hover doesn't exist. This ensures the project text is always visible on phones */
+        @media (max-width: 768px) {
+            .portfolio-item::after {
+                opacity: 1; /* Always show the dark gradient overlay */
+                background: linear-gradient(to top, rgba(10, 25, 47, 0.95) 0%, rgba(10, 25, 47, 0.05) 100%);
+            }
+            .portfolio-info {
+                opacity: 1; /* Always show the text */
+                bottom: 0;  /* Anchor text properly to the bottom */
+                padding: 20px;
+            }
+            .portfolio-info h3 {
+                font-size: 1.3rem;
+            }
+            .portfolio-info p {
+                font-size: 0.9rem;
+                margin-bottom: 10px;
+            }
+            /* Make the "Discuss" button smaller on mobile */
+            .portfolio-info .btn-primary {
+                padding: 6px 15px;
+                font-size: 0.8rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <div id="preloader">
@@ -58,7 +85,7 @@
                     <div class="portfolio-info">
                         <h3>Organic Growth Spurt</h3>
                         <p>300% Organic Traffic Surge in 6 Months via technical SEO.</p>
-                        <a href="contact.html" class="btn-primary" style="padding: 8px 20px; font-size: 0.85rem; margin-top: 10px;">Discuss Similar Project</a>
+                        <a href="contact.html" class="btn-primary" style="margin-top: 10px;">Discuss Similar Project</a>
                     </div>
                 </div>
 
@@ -67,7 +94,7 @@
                     <div class="portfolio-info">
                         <h3>PPC Optimization</h3>
                         <p>Decreased CPC by 40% while doubling high-quality conversions.</p>
-                        <a href="contact.html" class="btn-primary" style="padding: 8px 20px; font-size: 0.85rem; margin-top: 10px;">Discuss Similar Project</a>
+                        <a href="contact.html" class="btn-primary" style="margin-top: 10px;">Discuss Similar Project</a>
                     </div>
                 </div>
 
@@ -76,7 +103,7 @@
                     <div class="portfolio-info">
                         <h3>Enterprise Redesign</h3>
                         <p>High-conversion UI/UX & robust web application development.</p>
-                        <a href="contact.html" class="btn-primary" style="padding: 8px 20px; font-size: 0.85rem; margin-top: 10px;">Discuss Similar Project</a>
+                        <a href="contact.html" class="btn-primary" style="margin-top: 10px;">Discuss Similar Project</a>
                     </div>
                 </div>
 
@@ -85,16 +112,16 @@
                     <div class="portfolio-info">
                         <h3>Social Grid Expansion</h3>
                         <p>Multi-platform viral engagement campaigns tailored for FMCG.</p>
-                        <a href="contact.html" class="btn-primary" style="padding: 8px 20px; font-size: 0.85rem; margin-top: 10px;">Discuss Similar Project</a>
+                        <a href="contact.html" class="btn-primary" style="margin-top: 10px;">Discuss Similar Project</a>
                     </div>
                 </div>
                 
                 <div class="portfolio-item reveal" style="transition-delay: 0.1s;">
-                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Project Packaging">
+                    <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Project Content">
                     <div class="portfolio-info">
-                        <h3>Strategic Branding</h3>
-                        <p>Comprehensive corporate identity and branding overhaul.</p>
-                        <a href="contact.html" class="btn-primary" style="padding: 8px 20px; font-size: 0.85rem; margin-top: 10px;">Discuss Similar Project</a>
+                        <h3>Content Authority</h3>
+                        <p>Curated blog networks that established domain expertise.</p>
+                        <a href="contact.html" class="btn-primary" style="margin-top: 10px;">Discuss Similar Project</a>
                     </div>
                 </div>
 
@@ -103,7 +130,7 @@
                     <div class="portfolio-info">
                         <h3>AI Chat-Bot Integration</h3>
                         <p>Automated 24/7 lead generation and customer support systems.</p>
-                        <a href="contact.html" class="btn-primary" style="padding: 8px 20px; font-size: 0.85rem; margin-top: 10px;">Discuss Similar Project</a>
+                        <a href="contact.html" class="btn-primary" style="margin-top: 10px;">Discuss Similar Project</a>
                     </div>
                 </div>
 
@@ -115,7 +142,7 @@
         <div class="container" style="text-align: center;">
             <h2>Like what you see?</h2>
             <p>Let's create a customized marketing plan specifically for your business.</p>
-            <a href="contact.html" class="btn-primary" style="padding: 16px 36px; font-size: 1.1rem; margin-top: 10px;">Start Your Project</a>
+            <a href="contact.html" class="btn-quote" style="padding: 16px 36px; font-size: 1.1rem; margin-top: 10px;">Start Your Project</a>
         </div>
     </section>
 
