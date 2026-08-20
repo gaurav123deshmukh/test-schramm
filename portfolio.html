@@ -6,52 +6,28 @@
     <title>Our Work | Schramm AdLabs</title>
     
     <link rel="icon" href="FAV ICON.webp" type="image/webp">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
-    
     <link rel="stylesheet" href="style.css">
 
     <style>
-        /* On mobile, hover doesn't exist. This ensures the project text is always visible on phones */
         @media (max-width: 768px) {
-            .portfolio-item::after {
-                opacity: 1; /* Always show the dark gradient overlay */
-                background: linear-gradient(to top, rgba(10, 25, 47, 0.95) 0%, rgba(10, 25, 47, 0.05) 100%);
-            }
-            .portfolio-info {
-                opacity: 1; /* Always show the text */
-                bottom: 0;  /* Anchor text properly to the bottom */
-                padding: 20px;
-            }
-            .portfolio-info h3 {
-                font-size: 1.3rem;
-            }
-            .portfolio-info p {
-                font-size: 0.9rem;
-                margin-bottom: 10px;
-            }
-            /* Make the "Discuss" button smaller on mobile */
-            .portfolio-info .btn-primary {
-                padding: 6px 15px;
-                font-size: 0.8rem;
-            }
+            .portfolio-item::after { opacity: 1; background: linear-gradient(to top, rgba(10, 25, 47, 0.95) 0%, rgba(10, 25, 47, 0.05) 100%); }
+            .portfolio-info { opacity: 1; bottom: 0; padding: 20px; }
+            .portfolio-info h3 { font-size: 1.3rem; }
+            .portfolio-info p { font-size: 0.9rem; margin-bottom: 10px; }
+            .portfolio-info .btn-primary { padding: 6px 15px; font-size: 0.8rem; }
         }
     </style>
 </head>
 <body>
-    <div id="preloader">
-        <div class="spinner"></div>
-    </div>
+    <div id="preloader"><div class="spinner"></div></div>
 
     <header>
         <div class="container nav-wrapper">
             <a href="index.html" class="logo">
                 <img src="image_33197f.png" alt="Schramm AdLabs Logo">
             </a>
-
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
@@ -59,7 +35,6 @@
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-
             <div class="header-actions">
                 <a href="contact.html" class="btn-quote">Get A Quote</a>
                 <div class="menu-toggle">
@@ -79,7 +54,6 @@
     <section class="content-section">
         <div class="container">
             <div class="grid">
-                
                 <div class="portfolio-item reveal">
                     <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Project SEO">
                     <div class="portfolio-info">
@@ -88,7 +62,6 @@
                         <a href="contact.html" class="btn-primary" style="margin-top: 10px;">Discuss Similar Project</a>
                     </div>
                 </div>
-
                 <div class="portfolio-item reveal" style="transition-delay: 0.1s;">
                     <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Project PPC">
                     <div class="portfolio-info">
@@ -97,7 +70,6 @@
                         <a href="contact.html" class="btn-primary" style="margin-top: 10px;">Discuss Similar Project</a>
                     </div>
                 </div>
-
                 <div class="portfolio-item reveal" style="transition-delay: 0.2s;">
                     <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Project Web">
                     <div class="portfolio-info">
@@ -106,7 +78,6 @@
                         <a href="contact.html" class="btn-primary" style="margin-top: 10px;">Discuss Similar Project</a>
                     </div>
                 </div>
-
                 <div class="portfolio-item reveal">
                     <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Project Social">
                     <div class="portfolio-info">
@@ -115,7 +86,6 @@
                         <a href="contact.html" class="btn-primary" style="margin-top: 10px;">Discuss Similar Project</a>
                     </div>
                 </div>
-                
                 <div class="portfolio-item reveal" style="transition-delay: 0.1s;">
                     <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Project Content">
                     <div class="portfolio-info">
@@ -124,7 +94,6 @@
                         <a href="contact.html" class="btn-primary" style="margin-top: 10px;">Discuss Similar Project</a>
                     </div>
                 </div>
-
                 <div class="portfolio-item reveal" style="transition-delay: 0.2s;">
                     <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Project Corporate">
                     <div class="portfolio-info">
@@ -133,7 +102,6 @@
                         <a href="contact.html" class="btn-primary" style="margin-top: 10px;">Discuss Similar Project</a>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -150,7 +118,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-logo">
-                    <a href="index.html"><img src="image_33197f.png" alt="Schramm AdLabs Logo"></a>
+                    <a href="index.html"><img src="logo footer.png" alt="Schramm AdLabs Footer Logo"></a>
                     <p>Relevant. Reliable. Realistic.<br>A Division of KBJ HR INDIA PRIVATE LIMITED.</p>
                 </div>
                 <div class="footer-links">
@@ -176,7 +144,6 @@
             </div>
         </div>
     </footer>
-
     <script src="app.js"></script>
 </body>
 </html>
