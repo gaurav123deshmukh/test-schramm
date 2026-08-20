@@ -62,7 +62,7 @@ a { text-decoration: none; color: inherit; }
    Header - Dark Navy (5% Transparent)
    ========================================= */
 header {
-    background: rgba(10, 25, 47, 0.95); /* 95% opacity / 5% transparency */
+    background: rgba(10, 25, 47, 0.95); 
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     position: fixed; width: 100%; top: 0; z-index: 1000;
@@ -71,14 +71,11 @@ header {
     transition: var(--transition); padding: 12px 0;
 }
 
-.nav-wrapper { 
-    display: flex; justify-content: space-between; align-items: center; 
-}
+.nav-wrapper { display: flex; justify-content: space-between; align-items: center; }
 
 .logo img { 
     max-height: 48px; width: auto; transition: var(--transition); 
-    filter: brightness(0) invert(1) drop-shadow(0 2px 4px rgba(0,0,0,0.2)); 
-    display: block;
+    filter: brightness(0) invert(1) drop-shadow(0 2px 4px rgba(0,0,0,0.2)); display: block;
 }
 .logo img:hover { transform: scale(1.05); filter: brightness(0) invert(1) drop-shadow(0 4px 8px rgba(0, 212, 255, 0.4)); }
 
@@ -96,7 +93,6 @@ header {
 .nav-links a:hover, .nav-links a.active { color: var(--white); text-shadow: 0 0 8px rgba(255,255,255,0.5); }
 .nav-links a:hover::after, .nav-links a.active::after { width: 100%; box-shadow: 0 0 8px var(--quote-cyan); }
 
-/* Right-side Action Group */
 .header-actions { display: flex; align-items: center; gap: 15px; }
 
 /* "Get A Quote" Glow Button */
@@ -109,19 +105,16 @@ header {
     box-shadow: 0 4px 15px var(--quote-cyan-glow); white-space: nowrap;
 }
 .btn-quote:hover {
-    transform: translateY(-3px) scale(1.02);
-    box-shadow: 0 8px 25px rgba(0, 212, 255, 0.6);
-    color: var(--white);
+    transform: translateY(-3px) scale(1.02); box-shadow: 0 8px 25px rgba(0, 212, 255, 0.6); color: var(--white);
 }
 
-/* Hamburger Menu Icon */
 .menu-toggle { 
     display: none; font-size: 1.6rem; color: var(--white); 
     cursor: pointer; padding: 4px; transition: var(--transition);
 }
 .menu-toggle:hover { color: var(--quote-cyan); transform: scale(1.1); }
 
-/* Generic High-End Buttons */
+/* Generic Buttons */
 .btn-primary {
     background: linear-gradient(135deg, var(--primary-blue), var(--dark-navy));
     color: var(--white); padding: 16px 36px; font-weight: 600; border-radius: 8px; 
@@ -144,11 +137,15 @@ header {
 }
 
 /* =========================================
-   Refined Hero Section
+   Refined Hero Section with Image Background
    ========================================= */
 .hero {
-    padding: 240px 0 120px; text-align: center; position: relative;
-    background: linear-gradient(to bottom, #FFFFFF 0%, var(--bg-main) 100%);
+    padding: 240px 0 120px; 
+    text-align: center; 
+    position: relative;
+    /* Soft white gradient overlaying your custom image */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.88) 0%, rgba(244, 247, 251, 0.98) 100%), 
+                url('Untitled design (2) (1).jpg') center/cover no-repeat;
 }
 .hero h1 { font-size: 4rem; font-weight: 800; line-height: 1.15; margin-bottom: 25px; color: var(--dark-navy); letter-spacing: -1px; }
 .hero h1 span { 
@@ -162,7 +159,8 @@ header {
 
 .page-header {
     padding: 190px 0 80px; text-align: center; position: relative;
-    background: linear-gradient(to bottom, #FFFFFF 0%, var(--bg-main) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.88) 0%, rgba(244, 247, 251, 0.98) 100%), 
+                url('Untitled design (2) (1).jpg') center/cover no-repeat;
     border-bottom: 1px solid rgba(0,0,0,0.03);
 }
 .page-header h1 { font-size: 3.5rem; font-weight: 800; color: var(--dark-navy); margin-bottom: 15px; letter-spacing: -1px; }
@@ -229,7 +227,7 @@ header {
 .contact-form { display: flex; flex-direction: column; gap: 24px; width: 100%; position: relative; z-index: 2; }
 .contact-form input, .contact-form textarea, .lead-form input { 
     width: 100%; box-sizing: border-box; background: var(--white); 
-    border: 2px solid transparent; padding: 16px 20px; color: var(--text-dark); 
+    border: 1px solid rgba(0,0,0,0.12); padding: 16px 20px; color: var(--text-dark); 
     font-family: 'Inter', sans-serif; font-size: 1rem; outline: none; 
     transition: var(--transition); border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.02);
 }
