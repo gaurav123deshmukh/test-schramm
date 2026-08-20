@@ -3,43 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
-    <title>Contact Us | Schramm AdLabs</title>
+    <title>Services | Schramm AdLabs</title>
     
     <link rel="icon" href="FAV ICON.webp" type="image/webp">
     
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
-    
     <link rel="stylesheet" href="style.css">
-
-    <style>
-        .contact-wrapper {
-            display: grid;
-            grid-template-columns: 1fr 1.5fr;
-            gap: 40px;
-            align-items: start;
-        }
-        .form-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-            width: 100%;
-        }
-        
-        /* Mobile Breakpoints */
-        @media (max-width: 992px) {
-            .contact-wrapper {
-                grid-template-columns: 1fr; /* Stacks the address and form on top of each other */
-            }
-        }
-        @media (max-width: 600px) {
-            .form-row {
-                grid-template-columns: 1fr; /* Stacks the inputs (Name/Email) on top of each other */
-            }
-        }
-    </style>
 </head>
 <body>
     <div id="preloader"><div class="spinner"></div></div>
@@ -52,10 +22,10 @@
 
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
                 <li><a href="portfolio.html">Work</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
 
             <div class="header-actions">
@@ -69,67 +39,83 @@
 
     <section class="page-header">
         <div class="container reveal">
-            <h1>Let's Talk Business</h1>
-            <p>Reach out to discuss your customized marketing plan.</p>
+            <h1>Complete Marketing Solutions</h1>
+            <p>We do not give fit-to-all solutions. We tailor-make solutions for your business.</p>
+        </div>
+    </section>
+
+    <section class="content-section" style="padding-bottom: 50px;">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Our 3-Step Process</h2>
+                <p>A simple, transparent process to transform your digital presence.</p>
+            </div>
+            <div class="grid">
+                <div class="card reveal" style="position: relative;">
+                    <div class="step-number">01</div>
+                    <i class="fa-solid fa-clipboard-list"></i>
+                    <h3>Gather</h3>
+                    <p>We start by understanding exactly what your business requirement is, why you want to expand, and how much you are looking to invest.</p>
+                </div>
+                <div class="card reveal" style="transition-delay: 0.1s; position: relative;">
+                    <div class="step-number">02</div>
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h3>Analyse</h3>
+                    <p>We analyze the gathered data to create tailored solutions that meet your specific marketing objectives and industry demands.</p>
+                </div>
+                <div class="card reveal" style="transition-delay: 0.2s; position: relative;">
+                    <div class="step-number">03</div>
+                    <i class="fa-solid fa-rocket"></i>
+                    <h3>Deliver Value</h3>
+                    <p>We deploy cost-optimized, result-oriented solutions suitable for your current market situation without cutting corners.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="content-section">
-        <div class="container contact-wrapper">
-            
-            <div class="card reveal" style="padding: 40px;">
-                <h3 style="font-size: 1.5rem; color: var(--dark-navy); margin-bottom: 25px;">Our Headquarters</h3>
-                
-                <div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
-                    <i class="fa-solid fa-location-dot" style="font-size: 1.3rem; color: var(--primary-blue); margin-right: 15px; margin-top: 5px;"></i>
-                    <p style="color: var(--text-light); line-height: 1.6; margin: 0;">
-                        <strong>Schramm AdLabs</strong><br>
-                        Office No. 210, 2nd Floor, A-Wing, <br>
-                        Shiv Chamber, Plot No. 21, Sector - 11, <br>
-                        C.B.D Belapur, Navi Mumbai - 400614
-                    </p>
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Our Offerings</h2>
+                <p>From offline branding to advanced AI solutions, we cover the full spectrum.</p>
+            </div>
+            <div class="grid">
+                <div class="card reveal">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h3>Logo & Website Design</h3>
+                    <p>Make You Unique. Beautiful digital branding and highly reliable hosting infrastructures.</p>
                 </div>
-
-                <div style="display: flex; align-items: center; margin-bottom: 20px;">
-                    <i class="fa-solid fa-envelope" style="font-size: 1.3rem; color: var(--primary-blue); margin-right: 15px;"></i>
-                    <p style="color: var(--text-light); margin: 0;">schrammadlabs@kbjindia.com</p>
+                <div class="card reveal" style="transition-delay: 0.1s;">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <h3>Search Engine Optimization</h3>
+                    <p>Make You Searchable. Rank higher on search engines and dominate organic search.</p>
                 </div>
-
-                <div style="display: flex; align-items: center; margin-bottom: 20px;">
-                    <i class="fa-solid fa-phone" style="font-size: 1.3rem; color: var(--primary-blue); margin-right: 15px;"></i>
-                    <p style="color: var(--text-light); margin: 0;">+91 8655695279<br>022 44517666 / 67</p>
+                <div class="card reveal" style="transition-delay: 0.2s;">
+                    <i class="fa-solid fa-share-nodes"></i>
+                    <h3>Social Media Marketing</h3>
+                    <p>Make You Trending Relevantly. Cultivate an engaging community around your brand.</p>
                 </div>
-
-                <div style="border-top: 1px solid rgba(0,0,0,0.08); padding-top: 20px; margin-top: 10px;">
-                    <p style="font-size: 0.9rem; font-weight: 600; color: var(--dark-navy); margin: 0;">GST NO: 27AALCK1932F1ZK</p>
-                    <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 4px;">A Division of KBJ HR INDIA PRIVATE LIMITED</p>
+                <div class="card reveal">
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h3>Curated Blogs & Videos</h3>
+                    <p>Make Your Domain Expertise Manifested. Content authority creation that drives trust.</p>
+                </div>
+                <div class="card reveal" style="transition-delay: 0.1s;">
+                    <i class="fa-solid fa-bullseye"></i>
+                    <h3>Paid Online Ads</h3>
+                    <p>Make You Present At Right Time & Right Place. Precision programmatic targeting.</p>
+                </div>
+                <div class="card reveal" style="transition-delay: 0.2s;">
+                    <i class="fa-solid fa-robot"></i>
+                    <h3>AI & Chat-bots</h3>
+                    <p>Advanced digital marketing automation solutions for 24/7 customer engagement.</p>
+                </div>
+                <div class="card reveal" style="transition-delay: 0.1s;">
+                    <i class="fa-solid fa-billboard"></i>
+                    <h3>Offline Presence</h3>
+                    <p>Ensure Your Presence. Brochures, Posters, Leaflets, and Hoardings tailored to your events.</p>
                 </div>
             </div>
-
-            <div class="card reveal" style="transition-delay: 0.15s; padding: 40px;">
-                <h3 style="font-size: 1.5rem; color: var(--dark-navy); margin-bottom: 10px;">Send an Inquiry</h3>
-                <p style="color: var(--text-light); margin-bottom: 25px;">Fill out the form below and our strategists will get back to you promptly.</p>
-                
-                <form class="contact-form" action="thank-you.html">
-                    <div class="form-row">
-                        <input type="text" placeholder="Your Full Name *" required>
-                        <input type="text" placeholder="Company Name">
-                    </div>
-                    
-                    <div class="form-row">
-                        <input type="email" placeholder="Your Official Email *" required>
-                        <input type="tel" placeholder="Your Phone Number *" required>
-                    </div>
-
-                    <input type="text" placeholder="Subject" required>
-                    <textarea placeholder="Tell us about your business requirements... *" required></textarea>
-                    
-                    <button type="submit" class="btn-primary" style="margin-top: 10px; width: 100%; font-size: 1.05rem; padding: 15px;">
-                        Request a Call <i class="fa-solid fa-paper-plane" style="margin-left: 8px;"></i>
-                    </button>
-                </form>
-            </div>
-
         </div>
     </section>
 
@@ -163,7 +149,6 @@
             </div>
         </div>
     </footer>
-
     <script src="app.js"></script>
 </body>
 </html>
