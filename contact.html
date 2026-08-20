@@ -5,21 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
     <title>Contact Us | Schramm AdLabs</title>
     
-    <!-- Favicon -->
     <link rel="icon" href="FAV ICON.webp" type="image/webp">
     
-    <!-- Fonts & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
     
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 40px;
+            align-items: start;
+        }
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            width: 100%;
+        }
+        
+        /* Mobile Breakpoints */
+        @media (max-width: 992px) {
+            .contact-wrapper {
+                grid-template-columns: 1fr; /* Stacks the address and form on top of each other */
+            }
+        }
+        @media (max-width: 600px) {
+            .form-row {
+                grid-template-columns: 1fr; /* Stacks the inputs (Name/Email) on top of each other */
+            }
+        }
+    </style>
 </head>
 <body>
     <div id="preloader"><div class="spinner"></div></div>
 
-    <!-- Responsive Header matching screenshot -->
     <header>
         <div class="container nav-wrapper">
             <a href="index.html" class="logo">
@@ -46,12 +70,12 @@
     <section class="page-header">
         <div class="container reveal">
             <h1>Let's Talk Business</h1>
-            <p>Reach out to discuss your customized marketing plan[cite: 10].</p>
+            <p>Reach out to discuss your customized marketing plan.</p>
         </div>
     </section>
 
     <section class="content-section">
-        <div class="container grid" style="grid-template-columns: 1fr 1.5fr; align-items: start;">
+        <div class="container contact-wrapper">
             
             <div class="card reveal" style="padding: 40px;">
                 <h3 style="font-size: 1.5rem; color: var(--dark-navy); margin-bottom: 25px;">Our Headquarters</h3>
@@ -62,23 +86,23 @@
                         <strong>Schramm AdLabs</strong><br>
                         Office No. 210, 2nd Floor, A-Wing, <br>
                         Shiv Chamber, Plot No. 21, Sector - 11, <br>
-                        C.B.D Belapur, Navi Mumbai - 400614[cite: 10]
+                        C.B.D Belapur, Navi Mumbai - 400614
                     </p>
                 </div>
 
                 <div style="display: flex; align-items: center; margin-bottom: 20px;">
                     <i class="fa-solid fa-envelope" style="font-size: 1.3rem; color: var(--primary-blue); margin-right: 15px;"></i>
-                    <p style="color: var(--text-light); margin: 0;">schrammadlabs@kbjindia.com[cite: 10]</p>
+                    <p style="color: var(--text-light); margin: 0;">schrammadlabs@kbjindia.com</p>
                 </div>
 
                 <div style="display: flex; align-items: center; margin-bottom: 20px;">
                     <i class="fa-solid fa-phone" style="font-size: 1.3rem; color: var(--primary-blue); margin-right: 15px;"></i>
-                    <p style="color: var(--text-light); margin: 0;">+91 8655695279[cite: 10]<br>022 44517666 / 67[cite: 10]</p>
+                    <p style="color: var(--text-light); margin: 0;">+91 8655695279<br>022 44517666 / 67</p>
                 </div>
 
                 <div style="border-top: 1px solid rgba(0,0,0,0.08); padding-top: 20px; margin-top: 10px;">
-                    <p style="font-size: 0.9rem; font-weight: 600; color: var(--dark-navy); margin: 0;">GST NO: 27AALCK1932F1ZK[cite: 10]</p>
-                    <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 4px;">A Division of KBJ HR INDIA PRIVATE LIMITED[cite: 10]</p>
+                    <p style="font-size: 0.9rem; font-weight: 600; color: var(--dark-navy); margin: 0;">GST NO: 27AALCK1932F1ZK</p>
+                    <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 4px;">A Division of KBJ HR INDIA PRIVATE LIMITED</p>
                 </div>
             </div>
 
@@ -87,12 +111,12 @@
                 <p style="color: var(--text-light); margin-bottom: 25px;">Fill out the form below and our strategists will get back to you promptly.</p>
                 
                 <form class="contact-form" action="thank-you.html">
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; width: 100%;">
+                    <div class="form-row">
                         <input type="text" placeholder="Your Full Name *" required>
                         <input type="text" placeholder="Company Name">
                     </div>
                     
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; width: 100%;">
+                    <div class="form-row">
                         <input type="email" placeholder="Your Official Email *" required>
                         <input type="tel" placeholder="Your Phone Number *" required>
                     </div>
@@ -114,7 +138,7 @@
             <div class="footer-grid">
                 <div class="footer-logo">
                     <a href="index.html"><img src="image_33197f.png" alt="Schramm AdLabs Logo"></a>
-                    <p>Relevant. Reliable. Realistic.<br>A Division of KBJ HR INDIA PRIVATE LIMITED[cite: 10].</p>
+                    <p>Relevant. Reliable. Realistic.<br>A Division of KBJ HR INDIA PRIVATE LIMITED.</p>
                 </div>
                 <div class="footer-links">
                     <h4>Navigation</h4>
@@ -128,9 +152,9 @@
                 <div class="footer-links">
                     <h4>Contact Us</h4>
                     <ul>
-                        <li><i class="fa-solid fa-phone" style="margin-right: 8px;"></i> +91 8655695279[cite: 10]</li>
-                        <li><i class="fa-solid fa-envelope" style="margin-right: 8px;"></i> schrammadlabs@kbjindia.com[cite: 10]</li>
-                        <li><i class="fa-solid fa-location-dot" style="margin-right: 8px;"></i> CBD Belapur, Navi Mumbai[cite: 10]</li>
+                        <li><i class="fa-solid fa-phone" style="margin-right: 8px;"></i> +91 8655695279</li>
+                        <li><i class="fa-solid fa-envelope" style="margin-right: 8px;"></i> schrammadlabs@kbjindia.com</li>
+                        <li><i class="fa-solid fa-location-dot" style="margin-right: 8px;"></i> CBD Belapur, Navi Mumbai</li>
                     </ul>
                 </div>
             </div>
