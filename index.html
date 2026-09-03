@@ -1,24 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
-    <title>Schramm AdLabs | Premium Marketing & Lead Generation</title>
-    <meta name="description" content="Customized marketing plans for your business. No jargons, no big presentations. We keep it simple.">
     
+    <!-- Primary Meta Tags -->
+    <title>Schramm AdLabs | Premium Marketing & Lead Generation</title>
+    <meta name="title" content="Schramm AdLabs | Premium Marketing & Lead Generation" />
+    <meta name="description" content="Customized marketing plans for your business. No jargons, no big presentations. We keep it simple. We are your marketing partner." />
+    <meta name="keywords" content="marketing strategy, lead generation, SEO, web design, social media marketing, Schramm AdLabs, Navi Mumbai, advertising agency" />
+    <meta name="author" content="Schramm AdLabs" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="7 days" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://schrammadlabs.com/" />
+    <meta property="og:title" content="Schramm AdLabs | Premium Marketing & Lead Generation" />
+    <meta property="og:description" content="Customized marketing plans for your business. No jargons, no big presentations. We keep it simple." />
+    <!-- Using the newly attached image for social media sharing -->
+    <meta property="og:image" content="hero-marketing.jpg" />
+    <meta property="og:site_name" content="Schramm AdLabs" />
+    <meta property="og:locale" content="en_IN" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://schrammadlabs.com/" />
+    <meta property="twitter:title" content="Schramm AdLabs | Premium Marketing & Lead Generation" />
+    <meta property="twitter:description" content="Customized marketing plans for your business. No jargons, no big presentations. We keep it simple." />
+    <!-- Using the newly attached image for Twitter sharing -->
+    <meta property="twitter:image" content="hero-marketing.jpg" />
+
+    <!-- Theme and PWA -->
+    <meta name="theme-color" content="#0A192F" />
+    <meta name="msapplication-TileColor" content="#0A192F" />
+
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="IN-MH" />
+    <meta name="geo.placename" content="Navi Mumbai" />
+    <meta name="geo.position" content="19.0176;73.0402" />
+    <meta name="ICBM" content="19.0176, 73.0402" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://schrammadlabs.com/" />
+
+    <!-- Favicon -->
     <link rel="icon" href="FAV ICON.webp" type="image/webp">
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="preloader"><div class="spinner"></div></div>
+    <!-- Clean Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
 
+    <!-- Sophisticated Dark Navy Header (95% Opaque) -->
     <header>
         <div class="container nav-wrapper">
             <a href="index.html" class="logo">
                 <img src="image_33197f.png" alt="Schramm AdLabs Logo">
             </a>
+
+            <!-- Navigation Links -->
             <ul class="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="services.html">Services</a></li>
@@ -26,6 +77,8 @@
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+
+            <!-- Mobile Hamburger & Quote Button -->
             <div class="header-actions">
                 <a href="contact.html" class="btn-quote">Get A Quote</a>
                 <div class="menu-toggle">
@@ -35,20 +88,26 @@
         </div>
     </header>
 
-    <section class="hero">
+    <!-- Hero Section with the New hero-marketing.jpg Background -->
+    <section class="hero" style="background: linear-gradient(rgba(10, 25, 47, 0.85), rgba(10, 25, 47, 0.95)), url('hero-marketing.jpg') center/cover no-repeat; padding: 240px 0 140px;">
         <div class="container reveal">
-            <h1>We Scale Businesses with <br><span>Customized Marketing Plans</span></h1>
-            <p>No jargons, no big presentations. We keep it simple. We are your marketing partner, truly speaking your language to drive measurable results.</p>
+            <!-- Text overridden to white to contrast beautifully against the dark image overlay -->
+            <h1 style="color: var(--white);">We Scale Businesses with <br><span style="color: var(--quote-cyan);">Customized Marketing Plans</span></h1>
+            <p style="color: rgba(255, 255, 255, 0.85);">No jargons, no big presentations. We keep it simple. We are your marketing partner, truly speaking your language to drive measurable results.</p>
+            
+            <!-- Clear Action Steps -->
             <div class="cta-group">
                 <a href="#lead-form" class="btn-primary">Get Your Marketing Plan <i class="fa-solid fa-arrow-right"></i></a>
-                <a href="portfolio.html" class="btn-outline">View Our Work</a>
+                <a href="portfolio.html" class="btn-outline" style="background: rgba(255,255,255,0.1); color: var(--white); border-color: rgba(255,255,255,0.3);">View Our Work</a>
             </div>
-            <div class="trust-badge">
+
+            <div class="trust-badge" style="color: rgba(255,255,255,0.6);">
                 <p>Trusted by enterprises across NBFCs, Manufacturing, and E-Commerce.</p>
             </div>
         </div>
     </section>
 
+    <!-- The 3-Step Clear Action Plan -->
     <section class="content-section" style="background-color: var(--white);">
         <div class="container">
             <div class="section-header reveal">
@@ -78,6 +137,7 @@
         </div>
     </section>
 
+    <!-- Services Showcase -->
     <section id="services" class="content-section">
         <div class="container">
             <div class="section-header reveal">
@@ -107,10 +167,12 @@
         </div>
     </section>
 
+    <!-- Highly Visible Mobile-Responsive Lead Generation Form -->
     <section id="lead-form" class="lead-gen-section reveal">
         <div class="container" style="text-align: center;">
             <h2>Ready to scale your business?</h2>
             <p>Enter your details below and our strategists will contact you with a customized action plan.</p>
+            
             <form action="thank-you.html" class="lead-form">
                 <input type="text" placeholder="Your Name *" required>
                 <input type="email" placeholder="Your Work Email *" required>
@@ -120,6 +182,7 @@
         </div>
     </section>
 
+    <!-- Clean Footer -->
     <footer>
         <div class="container">
             <div class="footer-grid">
@@ -150,6 +213,20 @@
             </div>
         </div>
     </footer>
+
+    <!-- Google Translate Integration -->
+    <div id="google_translate_element_hidden" style="display:none;"></div>
+    <script>
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "en", includedLanguages: "en,mr,zh-CN,zh-TW", autoDisplay: false },
+          "google_translate_element_hidden"
+        );
+      }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <!-- App Scripts -->
     <script src="app.js"></script>
 </body>
 </html>
